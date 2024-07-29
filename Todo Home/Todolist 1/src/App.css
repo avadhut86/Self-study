@@ -1,0 +1,79 @@
+body {
+   background-color: #ccddff;
+}
+
+.app{
+  text-align: center;
+}
+
+.container  {
+  background-color: rgb(7, 2, 71);
+  justify-content: center;
+  width: 50%;
+  margin-left: 26%;
+  margin-top: 5%;
+  text-align: center;
+  margin: 20px;
+}
+
+input[type=text],select{
+  width: 80%;
+  padding: 12px 20px;
+  margin: 30px 0;
+  display: inline-block;
+  border: 2px soild violet;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button{
+  width: 15%;
+  background-color: greenyellow;
+  color: black;
+  margin: 5px 10px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #45a049;
+}
+
+.header{
+  width: 100%;
+  padding: 12px 20px;
+  color: white;
+  font-size: 20px;
+}
+
+.List-heading{
+  color: black;
+  font-size: 50px;
+  text-align: left;
+  background-color: cadetblue;
+  width: 60%;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.listData{
+  color: black;
+  font-size: 25px;
+  background-color: rgb(164, 203, 237);
+  text-align: left;
+  /* padding-left: 30px; */
+  width: 53%;
+  padding: 2px 30px 2px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.btn-postion{
+  position: relative;
+  margin: 5px 10px;
+  left: 11%;
+  top: -54px;
+}
