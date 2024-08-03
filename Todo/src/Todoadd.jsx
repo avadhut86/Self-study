@@ -2,7 +2,7 @@ import React from 'react'
 
 const Todoadd = ({toAdd}) => {
   return (
-    <button onClick={toAdd}>Add Task</button>
+    <button className='myBtn' onClick={toAdd}>&#43;</button>
   )
 }
 

@@ -38,10 +38,16 @@ const Todomain = () => {
     }
   return (
    <>
-   <h1>Todo List</h1>
-   <input type="text" placeholder='Enter here your Task' value={todo} onChange={(e) => {
+   <div className='container'>
+    <div className='card'>
+        <p className='para'>Date : Saturday, 10:00 am 2024</p>
+        <hr />
+        
+        <p className='para1'>task 1</p>
+   {/* <h1>Todo List</h1> */}
+   {/* <input className='text' type="text" placeholder='Enter here your Task' value={todo} onChange={(e) => {
     setTodo(e.target.value)
-   }}/>
+   }}/> */}
 
    <Todoadd toAdd = {addTask} />
 
@@ -60,6 +66,15 @@ const Todomain = () => {
    })}
 
    <RemoveAll Data = {listData} all = {removeAll} />
+
+   <p className='finish'>Finish</p>
+   
+   </div>
+
+   <div className='card-1'>
+        <input type="date" />
+   </div>
+   </div>
    
    </>
   )
