@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Popup from './Popup'
 
 const Button = () => {
 
-    function addTask(){
-        setListData([...listData,todo])
-        console.log(listData);
-        setTodo("")
-    }
+  const [showPopup, setShowPopup] = useState(false)
+
+//   function addTask(){
+//     setListData([...listData,todo])
+//     console.log(listData);
+//     setTodo("")
+// }
   return (
-    <button className='myBtn' onClick={addTask}>&#43;</button>
+    <>
+    <button className='myBtn' onClick={ () => {setShowPopup(true)}}>&#43;</button>
+    { showPopup &&  <Popup onClose = {() =>{setShowPopup(false)}} />}
+    </>
   )
 }
 
